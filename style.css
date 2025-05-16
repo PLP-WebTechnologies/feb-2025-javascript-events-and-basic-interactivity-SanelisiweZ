@@ -1,1 +1,176 @@
-
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #e6f0ff;
+    color: #003366;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 30px;
+  }
+  
+  /* Button Section */
+  #cta {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #volunteerBtn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 300ms ease, transform 150ms ease;
+  }
+  
+  #volunteerBtn:hover {
+    background-color: #3399ff;
+    transform: scale(1.05);
+  }
+  
+  #volunteerBtn.active {
+    background-color: #004080;
+  }
+  
+  /* Slideshow */
+  #gallery {
+    max-width: 420px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    border-radius: 8px;
+    display: none;
+    user-select: none;
+  }
+  
+  .slideshow img.active {
+    display: block;
+    animation: fadein 0.5s ease;
+  }
+  
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  /* Accordion */
+  .accordion {
+    max-width: 600px;
+    margin: 0 auto 50px;
+  }
+  
+  .accordion-btn {
+    background-color: #3399ff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 300ms ease;
+  }
+  
+  .accordion-btn:hover {
+    background-color: #66b2ff;
+  }
+  
+  .accordion-btn.active {
+    background-color: #004080;
+  }
+  
+  .panel {
+    background-color: #cce0ff;
+    padding: 15px 20px;
+    display: none;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  /* Form */
+  #signup {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  input:focus {
+    border-color: #004080;
+    outline: none;
+  }
+  
+  .error-msg {
+    color: #cc0000;
+    font-size: 13px;
+    height: 18px;
+    margin-top: 2px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004080;
+  }
+  
+  .form-msg {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    #volunteerBtn {
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
+  

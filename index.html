@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volunteer for New Cancer Cure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Join the Fight: Volunteer for the New Cancer Cure!</h1>
+  </header>
+
+  <section id="cta">
+    <button id="volunteerBtn">Click me to Volunteer</button>
+  </section>
+
+  <section id="gallery">
+    <h2>Discover Our Journey</h2>
+    <div class="slideshow">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7ccKORDxrl_Wi0domiw1_yJvgvIzUTGbww&s" alt="Research Lab" />
+      <img src="https://www.wildapricot.com/wp-content/uploads/2022/10/volunteerhands-thumb.jpg" alt="Volunteers" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFOmbrs_8v2kDdpsui2Z2McSoBxS9t__iayA&s" alt="Hope" />
+    </div>
+  </section>
+
+  <section id="info">
+    <h2>Learn More</h2>
+    <div class="accordion">
+      <button class="accordion-btn">What is Precision Medicine?</button>
+      <div class="panel">
+        <p>Precision medicine means tailoring treatment specifically to each patient’s needs.</p>
+      </div>
+      <button class="accordion-btn">How Can I Help?</button>
+      <div class="panel">
+        <p>Volunteer your time, spread awareness, or participate in studies.</p>
+      </div>
+      <button class="accordion-btn">Who Benefits?</button>
+      <div class="panel">
+        <p>Patients, families, and future generations all benefit from this breakthrough.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="signup">
+    <h2>Sign Up to Volunteer</h2>
+    <form id="volunteerForm" novalidate>
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required />
+      <span class="error-msg" id="nameError"></span>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required />
+      <span class="error-msg" id="emailError"></span>
+
+      <label for="password">Password *</label>
+      <input type="password" id="password" name="password" required minlength="8" />
+      <span class="error-msg" id="passwordError"></span>
+
+      <button type="submit">Submit</button>
+      <span class="form-msg" id="formMsg"></span>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
